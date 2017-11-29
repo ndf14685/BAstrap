@@ -268,22 +268,22 @@ a .link_style {
 
 .intro_grisclaro {
                 background-color: #fdfdfd !important;
-                padding-top: 100px;
-                padding-bottom: 100px;
+                padding-top: 80px;
+                padding-bottom: 80px;
             }
 
 .intro_gris {
-                padding-top: 100px;
-                padding-bottom: 100px;
+                padding-top: 80px;
+                padding-bottom: 80px;
             }
 
 
-.vacio {
+/*.vacio {
                 height: 300px;
                 background-color: #9678fc;
                 width: 300px;
             }
-
+*/
 .caption  h3  {
                 margin-top: 5px;
             }
