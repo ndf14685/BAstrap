@@ -124,17 +124,6 @@
           border-bottom: 0px;  
     }   
     
-    #loader {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        z-index: 999;
-        overflow: visible;
-        background: url('images/mascota.gif') no-repeat center center;
-        background-size: 180px;
-        background-color: #fff;
-        top:0;
-    }
     
     
 </style>
@@ -153,9 +142,7 @@
     ga('send', 'pageview');
   </script>
   
-  <div id="loader"></div>
 
-  <div style="display:none;" id="contenidobastrap">
       <header class="navbar navbar-primary navbar-top">
       
         <div class="container">
@@ -3807,8 +3794,7 @@
           </div>
         </div>
       </footer>
-  </div>
-
+ 
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -3843,18 +3829,6 @@
       $temp.remove();
     }
   </script>
-<script>
-var myVar;
-
-function myFunction() {
-    myVar = setTimeout(showPage, 1500);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("contenidobastrap").style.display = "block";
-}
-</script>
 
 
 
