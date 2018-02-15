@@ -124,6 +124,19 @@
           border-bottom: 0px;  
     }   
     
+/*
+    #loader {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        overflow: visible;
+        background: url('images/mascota.gif') no-repeat center center;
+        background-size: 180px;
+        background-color: #fff;
+        top:0;
+    }
+*/
     
     
 </style>
@@ -142,7 +155,9 @@
     ga('send', 'pageview');
   </script>
   
+<!--  <div id="loader"></div>-->
 
+<!--  <div style="display:none;" id="contenidobastrap">-->
       <header class="navbar navbar-primary navbar-top">
       
         <div class="container">
@@ -156,8 +171,8 @@
       
             <div class="col-md-6 col-xs-6 text-right">
       
-              <a href="https://dribbble.com/Baux" target="_blank"><img src="images/dribbble-icon.svg" class="ocultar" width="115px" alt="Dribbble" style="margin: -10px 15px 0px 0px"></a>
-               <a href="https://github.com/gcba/BAstrap" target="_blank"><img src="images/git-icon.svg" class="ocultar" alt="Github" style="margin: -10px 15px 0px 0px"></a>
+              <a href="https://dribbble.com/Baux" target="_blank"><img src="images/dribbble-icon.svg" class="ocultar" width="28px" alt="Dribbble" style="margin: -8px 15px 0px 0px"></a>
+              <a href="https://github.com/gcba/BAstrap" target="_blank"><img src="images/git-icon.svg" class="ocultar" alt="Github" style="margin: -10px 15px 0px 0px"></a>
       
               <!-- <span class="glyphicon glyphicon-search" style="margin-top: 25px;font-size:1.5em;color: #333;padding-right: 20px;"></span> -->
       
@@ -199,6 +214,15 @@
                             <li><a href="#introduccion" class="smoothScroll">Introducción</a></li>
                           </ul>
                         </li>
+                                 
+                        <li><a href="#usabilidad" class="smoothScroll">Usabilidad</a>
+                          <ul class="nav">
+                            <li><a href="#usabilidad" class="smoothScroll"></a></li>
+                            <li><a href="#testeo" class="smoothScroll">Usabilidad de tu sitio</a></li>
+                            <li><a href="#heuristicas" class="smoothScroll">Heurísticas de Nielsen</a></li>
+                            <li><a href="#escritura" class="smoothScroll">Cómo escribir</a></li>
+                          </ul>
+                        </li>         
                                   
                         <li><a href="#recursos" class="smoothScroll">Recursos</a>
                           <ul class="nav" style="display:none;">
@@ -649,6 +673,258 @@
                   </div>
                 </div>
       
+                <!-- /*** Usabilidad ***/ -->
+      
+                <div class="panel-body intro_grisclaro" id="usabilidad">
+                  <div class="container container_secundario">
+                    <section class="panel-heading">
+                      <div class="container">
+                        <div class="col-md-12 ">
+                          <h1>Testeá la usabilidad de tu sitio</h1><br><br>
+                          <p class="lead" id="testeo">Requerimientos básicos de usabilidad que debe tener un sitio de la familia de BA.</p>
+                        </div>
+                        <div class="col-md-12">
+                            
+                            <h3>Arquitectura de la información</h3>
+                            <h4>¿Los usuarios entienden de qué se trata y qué pueden hacer con esa información?</h4>
+                            <p>Lo primero que hace el usuario es un “escaneo” de la información, aterrizando el ojo en la parte superior izquierda. Casi el 80% de los lectores son “escaneadores”, buscan palabras claves dentro de un texto. Sólo el 20% restante lee palabra tras palabra. Los párrafos cortos se leen con mayor profundidad que los largos ya que permiten más atención visual. Por eso en un primer pantallazo del sitio, el usuario debe comprender de qué se trata y qué puede hacer con esa información. </p>
+                            
+                            <hr>
+                            <h3>Acciones claras</h3>
+                            <h4>¿Qué acciones esperás que hagan los usuarios al ingresar a tu sitio? ¿Están presentadas de forma clara y son fáciles de encontrar?</h4>
+                            <p>Las principales acciones deben ocupar un lugar de relevancia en la web, deben estar visibles, fáciles de encontrar.</p> 
+                            <p>Los <em>call to action</em> (llamados a la acción) en los botones y los enlaces del menú deben ser claros, informarle al usuario qué va a suceder cuando realice cierta acción. Chequeá la ubicación y tamaño de los llamados a la acción del sitio.</p>
+                            
+                            <hr>
+                            <h3>Mensajes de error</h3>
+                            <h4>¿El sitio web ofrece explicación de los errores y una solución a ellos?</h4>
+                            <p>Controlá los momentos donde pueden producirse errores, si se produce algún error, el usuario debe ser informado de forma correcta y sencilla. Además, debe ofrecer recuperación del error, una alternativa, es decir una solución para resolver dicho error.</p>
+                            
+                            <hr>
+                            <h3>Objetivo del producto</h3>
+                            <h4>¿Cuál es el principal objetivo de tu sitio? ¿Cuánto tardan los usuarios en resolverlo/encontrarlo?</h4>
+                            <p>Al visitar tu sitio, el usuario debe entender el objetivo, qué acciones debe realizar y por qué. Y éstas deben estar visibles y fáciles de completar.</p>
+                            
+                            <hr>
+                            <h3>Contenido</h3>
+                            <h4>¿Le hablás al usuario de forma directa y amigable?</h4>
+                            <p>El tono de tu sitio debe ser cercano y directo. Tené en cuenta quién va a leer lo que escribís y transmití las ideas de una manera ágil y clara. Usá palabras simples, oraciones directas, y guialo por el contenido para que lo comprenda sin esfuerzo.</p>
+                        
+                        </div>
+                        
+                        <div class="col-md-12" style="margin-top: 50px;" id="heuristicas">
+                            <h2>Heurísticas de Nielsen</h2>
+                            <p>Para realizar un diagnóstico sobre la usabilidad de la plataforma utilizamos las 10 heurísticas de Nielsen. Dichos puntos permiten detectar aciertos y oportunidades de mejora para optimizar la interfaz de manera rápida y efectiva y así mejorar la experiencia de los usuarios.</p>
+                            <p>Hacé un análisis más completo de tu sitio consultando las heurísticas.</p>
+                            
+                            <div class="panel-group" id="accordion" style="margin-top: 50px;">
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                      Visibilidad y estado del sistema <span class="glyphicon glyphicon-chevron-up" style="float: right"></span>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                    <p>El sistema debe informar a los usuarios del estado del sistema, dando una retroalimentación apropiada en un tiempo razonable.</p> 
+                                    <p>¿El sistema brinda respuesta al instante?</p>
+                                    <p>¿Mantiene informado al usuarios acerca de lo que está ocurriendo?</p>
+                                    <p>¿Lo mantiene informado a través de una retroalimentación apropiada?</p>
+                                    <p>¿Lo mantiene informado dentro de un tiempo razonable?</p>
+                                    <p>¿El usuario comprende cuando tiene que esperar?</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                      Relación entre el sistema y el mundo real <span class="glyphicon glyphicon-chevron-up" style="float: right"></span>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                    <p>El sistema debe utilizar el lenguaje de los usuarios, con palabras o frases que le sean conocidas, en lugar de los términos que se utilizan en el sistema, para que al usuario le resulte fácil la navegación.</p>
+                                    <p>¿El sistema habla el mismo lenguaje que el usuario? (palabras, frases y conceptos familiares)</p>
+                                    <p>¿La información aparece en un orden natural y lógico?</p>
+                                    <p>¿El modelo de navegación es acorde al usuario?</p>
+                                    <p>¿Sigue las convenciones del mundo real?</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                      Control y libertad del usuario <span class="glyphicon glyphicon-chevron-up" style="float: right"></span>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                    <p>En casos en los que los usuarios elijan una opción del sistema por error, éste debe contar con las opciones de deshacer y rehacer para proveer al usuario de una salida fácil sin tener que utilizar diálogo extendido.</p>
+                                    <p>¿El usuario siente libertad al navegar?</p>
+                                    <p>¿Cuenta con opciones de “salida de emergencia”?</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                      Consistencia y estándares <span class="glyphicon glyphicon-chevron-up" style="float: right"></span>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                    <p>El usuario debe seguir las normas y convenciones de la plataforma sobre la que está implementando el sistema, para que no se tenga que preguntar el significado de las palabras, situaciones o acciones del sistema.</p>
+                                    <p>¿El sistema respeta parámetros y criterios definidos dentro de la herramienta?</p>
+                                    <p>¿La curva de aprendizaje en la secuencia de acciones es corta?</p>
+                                    <p>¿Hay correspondencia entre aspecto y comportamiento?</p>
+                                    <p>¿Se respetan las convenciones y estándares de la plataforma?</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                      Prevención de errores <span class="glyphicon glyphicon-chevron-up" style="float: right"></span>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                    <p>Es más importante prevenir la aparición de errores que generar buenos mensajes de error. Hay que eliminar acciones predispuestas al error o, en todo caso, localizarlas y preguntar al usuario si está seguro de realizarlas.</p>
+                                    <p>¿Los call to action de las acciones principales se encuentran bien diferenciados?</p>
+                                    <p>¿Resalta lo que queremos que el usuario haga?</p>
+                                    <p>¿Impide el camino erróneo?</p>
+                                    <p>¿Cuenta con función autocomplete?</p>
+                                    <p>¿Todos los enlaces llevan a su sitio correspondiente?</p>
+                                    <p>¿Existen elementos de navegación que orienten al usuario acerca de dónde está y cómo deshacer su navegación?</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                                      Reconocimiento antes que recuerdo <span class="glyphicon glyphicon-chevron-up" style="float: right"></span>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                    <p>El sistema debe minimizar la información que el usuario debe recordar mostrándola a través de objetos, acciones u opciones. El usuario no tiene por qué recordar la información que recibió anteriormente. Las instrucciones para el uso del sistema deberían ser visibles o estar al alcance del usuario cuando se requieran.</p>
+                                    <p>¿Los objetos, acciones y opciones son visibles?</p>
+                                    <p>¿El sistema cuenta con valores por defecto?</p>
+                                    <p>¿Las instrucciones para el uso del sistema son visibles?</p>
+                                    <p>¿Puede el usuario reconocer la información en cada paso?</p>
+                                    <p>¿Los enlaces son fácilmente reconocibles como tales? ¿Su caracterización indica su estado (visitados, activos,...)?</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                                      Flexibilidad y eficiencia de uso <span class="glyphicon glyphicon-chevron-up" style="float: right"></span>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                    <p>Los aceleradores permiten aumentar la velocidad de interacción para el usuario experto tal que el sistema pueda atraer a usuarios principiantes y experimentados. Es importante que el sistema permita personalizar acciones frecuentes para así acelerar el uso de éste.</p>
+                                    <p>¿El sistema está pensado para usuarios novatos?</p>
+                                    <p>¿Y para usuarios expertos?</p>
+                                    <p>¿Existen atajos o aceleradores de navegación?</p>
+                                    <p>¿Las posibilidades de atajo son claras?</p>
+                                    <p>¿Permiten que la navegación sea más rápida?</p>
+                                    <p>¿Puede el sistema adaptarse al uso frecuente de cada usuario?</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                                      Estética y diseño minimalista <span class="glyphicon glyphicon-chevron-up" style="float: right"></span>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseEight" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                    <p>La interfaz no debe contener información que no sea relevante o se utilice raramente, pues cada unidad adicional de información en un diálogo compite con las unidades relevantes de la información y disminuye su visibilidad relativa.</p>
+                                    <p>¿Los recursos se encuentran simplificados?
+                                    <p>¿La información ofrecida al usuario es relevante en toda la experiencia?</p>
+                                    <p>¿El tamaño de fuente es legible?</p>
+                                    <p>¿Facilita la lectura?</p>
+                                    <p>¿Existe un alto contraste entre el color de fuente y el fondo?</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+                                      Ayuda para reconocimiento y recuperación del error <span class="glyphicon glyphicon-chevron-up" style="float: right"></span>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseNine" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                    <p>Los mensajes de error deben expresarse en un lenguaje claro, indicar exactamente el problema y ser constructivos.</p>
+                                    <p>¿Los mensajes de error tienen lenguaje claro?</p>
+                                    <p>¿La estructura gramatical es simple?</p>
+                                    <p>¿Cuentan con ayudas contextuales?</p>
+                                    <p>¿Las frases verbales están orientadas a la acción?</p>
+                                    <p>¿Indica de forma precisa el problema?</p>
+                                    <p>¿Sugiere una solución constructiva al problema?</p>
+                                    <p>¿Se ofrece ayuda contextual en tareas complejas?</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                                      Ayuda y documentación <span class="glyphicon glyphicon-chevron-up" style="float: right"></span>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseTen" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                    <p>A pesar de que es mejor un sistema que no necesite documentación, puede ser necesario disponer de ésta. Si así es, la documentación tiene que ser fácil de encontrar, estar centrada en las tareas del usuario, tener información de las etapas a realizar y no ser muy extensa.</p>
+                                    <p>¿El sistema ofrece ayuda?</p>
+                                    <p>¿Es fácil de utilizar?</p>
+                                    <p>¿Está enfocada en las tareas del usuario?</p>
+                                    <p>¿Cuenta con una lista concreta de pasos a desarrollar? (tooltips, tutorial o tips & tricks).</p>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                        </div>
+                      
+                        <div class="col-md-12" style="margin-top: 50px;" id="escritura">
+                            <h2>Cómo escribir en la web</h2>
+                            <br>
+                            <h4><span class="glyphicon glyphicon-ok"></span> Tratá al usuario de “vos”.</h4>
+                            <h4><span class="glyphicon glyphicon-ok"></span> Usá un lenguaje sencillo y cercano, palabras simples y oraciones directas.</h4>
+                            <h4><span class="glyphicon glyphicon-ok"></span> Pensá en qué es lo más importante para el usuario ¡siempre!.</h4>
+                            <h4><span class="glyphicon glyphicon-ok"></span> Transmití la información lo más clara posible, sin rodeos, sino el usuario se aburre.</h4>
+                            <h4><span class="glyphicon glyphicon-ok"></span> Armá párrafos cortos e intercalá el texto con contenido o anclajes visuales.</h4>
+                        </div>
+                      
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                
                 <!-- /*** Recursos ***/ -->
       
                 <div class="panel-body intro_grisclaro" id="recursos">
@@ -3795,7 +4071,8 @@
           </div>
         </div>
       </footer>
- 
+<!--  </div>-->
+
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -3830,6 +4107,20 @@
       $temp.remove();
     }
   </script>
+<!--
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("contenidobastrap").style.display = "block";
+}
+</script>
+-->
 
 
 
