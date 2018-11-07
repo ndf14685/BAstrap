@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#spinner {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(255,255,255, 0.3);
+}
+
+#status div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 56px;
+    height: 56px;
+    margin: auto;
+    border: 6px solid #fdd306;
+    border-radius: 50%;
+    animation: status 1s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fcda59 transparent transparent transparent;
+}
+
+#status div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+#status div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+#status div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes status {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}

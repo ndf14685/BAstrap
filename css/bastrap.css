@@ -51,6 +51,11 @@
     font-style: normal;
   }
 
+/*  Estilos & animaciones de los loaders
+  * ======================================================================= */
+  @import "gota.css";
+  @import "spinner-simple.css";
+
 
 /* =============================================================================
 *  Tipografía
@@ -121,21 +126,6 @@
     h3,
     .h3 {
       font-size: 1.4em;
-    }
-
-    h4,
-    .h4 {
-
-    }
-
-    h5,
-    .h5 {
-
-    }
-
-    h6,
-    .h6 {
-
     }
 
     h1,
@@ -663,17 +653,20 @@
 
     .btn {
       -webkit-box-shadow: 1px 1px 2px #666;
+      box-shadow: none;
       border:0 !important;
     }
 
     .btn:hover {
       -webkit-box-shadow: 1px 1px 2px #666;
+      box-shadow: none;
       border:0 !important;
     }
 
     .btn:active,
     .btn.active {
       -webkit-box-shadow: 1px 1px 2px #666;
+      box-shadow: none;
       border:0 !important;
     }
 
@@ -752,7 +745,6 @@
       text-align: center;
       background: none;
       box-shadow: none;
-      font-size: ;
       color: #A8A8A8;
     }
 
@@ -1445,7 +1437,7 @@
     font-weight: normal !important;
     font-variant: normal !important;
     text-transform: none !important;
-    speak: none;
+    speak-as: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1457,7 +1449,7 @@
     font-weight: normal !important;
     font-variant: normal !important;
     text-transform: none !important;
-    speak: none;
+    speak-as: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -2509,7 +2501,6 @@
     background-color: #ffffff;
     border-bottom: 3px solid #fdd306;
   }
-}
 
 .navbar-primary .navbar-toggle {
   border-color: #d7a721;
